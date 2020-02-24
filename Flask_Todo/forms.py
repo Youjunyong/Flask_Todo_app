@@ -27,6 +27,6 @@ class LoginForm(FlaskForm):
                 raise ValueError("잘못된 비밀번호 입니다.")
             
 
-    userid = StringField('userid', validators=[DataRequired(), UserPassword()])
+    userid = StringField('userid', validators=[DataRequired()])
     password = PasswordField('password', validators=[DataRequired(), UserPassword()])
 
